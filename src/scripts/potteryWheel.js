@@ -11,7 +11,7 @@ export const makePottery = (shape, weight, height) => {
         weight: weight,
         height: height,
         id: primaryKey
-    }
+    };
     
     primaryKey += 1;
 
