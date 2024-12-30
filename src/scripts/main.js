@@ -1,4 +1,4 @@
-import { makePottery } from './potteryWheel.js'
+const { makePottery } = require('./potteryWheel')
 
 
 // Make 5 pieces of pottery at the wheel
