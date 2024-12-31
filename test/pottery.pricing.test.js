@@ -1,6 +1,6 @@
-import { makePottery } from "../src/scripts/PotteryWheel.js"
-import { firePottery } from "../src/scripts/Kiln.js"
-import { usePottery, toSellOrNotToSell } from "../src/scripts/PotteryCatalog.js"
+import { makePottery } from "../src/scripts/potteryWheel.js"
+import { firePottery } from "../src/scripts/kiln.js"
+import { usePottery, toSellOrNotToSell } from "../src/scripts/potteryCatalog.js"
 
 
 describe("Sell uncracked pottery", () => {
