@@ -1,7 +1,7 @@
-import { PotteryList } from "../src/scripts/PotteryList.js"
-import { makePottery } from "../src/scripts/PotteryWheel.js"
-import { firePottery } from "../src/scripts/Kiln.js"
-import { toSellOrNotToSell } from "../src/scripts/PotteryCatalog.js"
+import { potteryList } from "../src/scripts/potteryList.js"
+import { makePottery } from "../src/scripts/potteryWheel.js"
+import { firePottery } from "../src/scripts/kiln.js"
+import { toSellOrNotToSell } from "../src/scripts/potteryCatalog.js"
 
 describe('HTML representation', () => {
     let html
@@ -11,7 +11,7 @@ describe('HTML representation', () => {
         const ornament = toSellOrNotToSell(firePottery(makePottery("Ornament", 2, 5), 2000))
         const platter = toSellOrNotToSell(firePottery(makePottery("Platter", 7, 2), 2000))
 
-        html = PotteryList()
+        html = potteryList()
         html = html.replace(/\n/g, "")
         html = html.replace(/\s{2,}/g, "")
     })
